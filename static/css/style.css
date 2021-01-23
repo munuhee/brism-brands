@@ -783,7 +783,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #testimonials .testimonial-item {
-    box-sizing: content-box;
     padding: 15px 15px 0 15px;
     margin: 30px 15px;
     text-align: center;
