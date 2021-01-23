@@ -784,10 +784,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #testimonials .testimonial-item {
     box-sizing: content-box;
-    padding: 30px 30px 0 30px;
+    padding: 15px 15px 0 15px;
     margin: 30px 15px;
     text-align: center;
-    min-height: 350px;
+    min-height: 330px;
+    backgroud-color: #ffff;
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
 }
 
