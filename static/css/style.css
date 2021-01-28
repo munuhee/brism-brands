@@ -1,8 +1,8 @@
 /*
-  Theme Name: Reveal
-  Theme URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
+Theme Name: Reveal
+Theme URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
+Author: BootstrapMade.com
+License: https://bootstrapmade.com/license/
 */
 
 
@@ -27,11 +27,6 @@ a:focus {
     color: #c01818d7;
     outline: none;
     text-decoration: none;
-}
-
-p {
-    padding: 0;
-    margin: 0 0 30px 0;
 }
 
 h1,
@@ -136,7 +131,7 @@ h6 {
 }
 
 #header #logo h1 {
-    font-size: 40px;
+    font-size: 30px;
     margin: 0;
     padding: 0;
     line-height: 1;
@@ -146,7 +141,13 @@ h6 {
 
 @media (max-width: 576px) {
     #header #logo h1 {
-        font-size: 30px!important;
+        font-size: 25px!important;
+    }
+}
+
+@media (max-width: 330px) {
+    #header #logo h1 {
+        font-size: 20px!important;
     }
 }
 
@@ -221,7 +222,6 @@ h6 {
     color: #c01818d7;
     text-decoration: underline;
 }
-
 
 #intro #intro-carousel {
     z-index: 8;
@@ -499,7 +499,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .section-header h2 {
-    font-size: 28px;
+    font-size: 22px;
     color: #0c2e8a;
     text-transform: uppercase;
     font-weight: 700;
@@ -719,7 +719,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #portfolio {
-    background: #fff;
     padding: 30px 0;
 }
 
@@ -1066,6 +1065,156 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #footer {
+    background: #0c2e8a!important;
+    padding: 0 0 30px 0;
+    color: #eee;
+    font-size: 14px;
+}
+#footer p a{
+    color: #ffff;
+}
+#footer .footer-top {
+    background: #0c2e8a!important;
+    padding: 60px 0 30px 0;
+}
+
+#footer .footer-top .footer-info {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-info h3 {
+    font-size: 34px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#footer .footer-top .footer-info p {
+    font-size: 13px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #ecf5ff;
+}
+
+#footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #c01818d7;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+    background: #0067d5;
+    color: #fff;
+}
+
+#footer .footer-top h4 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+#footer .footer-top .footer-links {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .footer-top .footer-links ul li {
+    padding: 8px 0;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+    color: #ecf5ff;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+    color: #74b5fc;
+}
+
+#footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact p {
+    line-height: 26px;
+}
+
+#footer .footer-top .footer-newsletter {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-newsletter input[type="email"] {
+    border: 0;
+    padding: 6px 8px;
+    width: 65%;
+}
+
+#footer .footer-top .footer-newsletter input[type="submit"] {
+    background: #c01818d7;
+    border: 0;
+    width: 35%;
+    padding: 6px 0;
+    text-align: center;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#footer .footer-top .footer-newsletter input[type="submit"]:hover {
+    background: #0062cc;
+}
+
+#footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+}
+
+#footer .credits {
+    text-align: center;
+    font-size: 13px;
+    color: #f1f7ff;
+}
+
+#footer .credits a {
+    color: #bfddfe;
+}
+
+#footer .credits a:hover {
+    color: #f1f7ff;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer {
     background: #f2f5f8;
     padding: 0 0 30px 0;
     font-size: 14px;
@@ -1124,7 +1273,7 @@ body.mobile-nav-active #mobile-nav-toggle {
         height: 74px;
     }
     #header #logo h1 {
-        font-size: 34px;
+        font-size: 27px;
     }
     #header #logo img {
         max-height: 40px;
@@ -1173,107 +1322,593 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
-/* Prelaoder */
+/*************************/
 
-#preloader {
+
+/*     02. Preloader     */
+
+
+/*************************/
+
+.spinner-wrapper {
     position: fixed;
+    z-index: 999999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+}
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    /* centers the loading animation vertically one the screen */
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    width: 3.75rem;
+    height: 1.25rem;
+    margin: -0.625rem 0 0 -1.875rem;
+    /* is width and height divided by two */
+    text-align: center;
+}
+
+.spinner>div {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    background-color: #c01818d7;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1.0);
+    }
+}
+
+@keyframes sk-bouncedelay {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1.0);
+        -ms-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+
+
+/***********************/
+
+
+/*     11. Request     */
+
+
+/***********************/
+
+.form-1 h2 {
+    margin-bottom: 1.25rem;
+}
+
+.form-1 .list-unstyled {
+    margin-top: 1.375rem;
+}
+
+.fa-check {
+    color: #00bfd8;
+    line-height: 1.375rem;
+}
+
+.form-1 .list-unstyled .media-body {
+    margin-left: 0.625rem;
+}
+
+.form-1 .text-container {
+    margin-bottom: 3.5rem;
+}
+
+
+/* Request */
+
+.form-1 .text-container {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+
+.form-group.has-error.has-danger {
+    margin-bottom: 0.625rem;
+}
+
+.form-group.has-error.has-danger .help-block.with-errors ul {
+    margin-top: 0.375rem;
+}
+
+.label-control {
+    position: absolute;
+    top: 0.87rem;
+    left: 1.375rem;
+    color: #626262;
+    opacity: 1;
+    font: 400 0.875rem/1.375rem "Raleway", sans-serif;
+    cursor: text;
+    transition: all 0.2s ease;
+}
+
+
+/* IE10+ hack to solve lower label text position compared to the rest of the browsers */
+
+@media screen and (-ms-high-contrast: active),
+screen and (-ms-high-contrast: none) {
+    .label-control {
+        top: 0.9375rem;
+    }
+}
+
+.form-control-input:focus+.label-control,
+.form-control-input.notEmpty+.label-control,
+.form-control-textarea:focus+.label-control,
+.form-control-textarea.notEmpty+.label-control {
+    top: 0.125rem;
+    opacity: 1;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.form-control-input,
+.form-control-select {
+    display: block;
+    /* needed for proper display of the label in Firefox, IE, Edge */
+    width: 100%;
+    padding-top: 1.0625rem;
+    padding-bottom: 0.0625rem;
+    padding-left: 1.3125rem;
+    border: 1px solid #c4d8dc;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    color: #626262;
+    font: 400 0.875rem/1.875rem "Raleway", sans-serif;
+    transition: all 0.2s;
+    -webkit-appearance: none;
+    /* removes inner shadow on form inputs on ios safari */
+}
+
+.form-control-select {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 3rem;
+}
+
+
+/* IE10+ hack to solve lower label text position compared to the rest of the browsers */
+
+@media screen and (-ms-high-contrast: active),
+screen and (-ms-high-contrast: none) {
+    .form-control-input {
+        padding-top: 1.25rem;
+        padding-bottom: 0.75rem;
+        line-height: 1.75rem;
+    }
+    .form-control-select {
+        padding-top: 0.875rem;
+        padding-bottom: 0.75rem;
+        height: 3.125rem;
+        line-height: 2.125rem;
+    }
+}
+
+select {
+    /* you should keep these first rules in place to maintain cross-browser behavior */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background-image: url('../images/down-arrow.png');
+    background-position: 96% 50%;
+    background-repeat: no-repeat;
+    outline: none;
+}
+
+select::-ms-expand {
+    display: none;
+    /* removes the ugly default down arrow on select form field in IE11 */
+}
+
+.form-control-textarea {
+    display: block;
+    /* used to eliminate a bottom gap difference between Chrome and IE/FF */
+    width: 100%;
+    height: 8rem;
+    /* used instead of html rows to normalize height between Chrome and IE/FF */
+    padding-top: 1.25rem;
+    padding-left: 1.3125rem;
+    border: 1px solid #c4d8dc;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    color: #626262;
+    font: 400 0.875rem/1.75rem "Raleway", sans-serif;
+    transition: all 0.2s;
+}
+
+.form-control-input:focus,
+.form-control-select:focus,
+.form-control-textarea:focus {
+    border: 1px solid #a1a1a1;
+    outline: none;
+    /* Removes blue border on focus */
+}
+
+.form-control-input:hover,
+.form-control-select:hover,
+.form-control-textarea:hover {
+    border: 1px solid #a1a1a1;
+}
+
+.checkbox {
+    font: 400 0.75rem/1.25rem "Raleway", sans-serif;
+}
+
+input[type='checkbox'] {
+    vertical-align: -15%;
+    margin-right: 0.375rem;
+}
+
+
+/* IE10+ hack to raise checkbox field position compared to the rest of the browsers */
+
+@media screen and (-ms-high-contrast: active),
+screen and (-ms-high-contrast: none) {
+    input[type='checkbox'] {
+        vertical-align: -9%;
+    }
+}
+
+.form-control-submit-button {
+    display: inline-block;
+    width: 100%;
+    height: 3.125rem;
+    border: 1px solid #00bfd8;
+    border-radius: 1.5rem;
+    background-color: #00bfd8;
+    color: #fff;
+    font: 700 0.75rem/1.75rem "Raleway", sans-serif;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.form-control-submit-button:hover {
+    background-color: transparent;
+    color: #00bfd8;
+}
+
+
+/* Form Success And Error Message Formatting */
+
+#rmsgSubmit.h3.text-center.tada.animated,
+#cmsgSubmit.h3.text-center.tada.animated,
+#pmsgSubmit.h3.text-center.tada.animated,
+#rmsgSubmit.h3.text-center,
+#cmsgSubmit.h3.text-center,
+#pmsgSubmit.h3.text-center {
+    display: block;
+    margin-bottom: 0;
+    color: #626262;
+    font: 400 1.125rem/1rem "Raleway", sans-serif;
+}
+
+
+/* The switch - the box around the slider */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+
+/* Hide default HTML checkbox */
+
+.switch input {
+    display: none;
+}
+
+
+/* The slider */
+
+.slider {
+    position: absolute;
+    cursor: pointer;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 9999;
-    overflow: hidden;
+    background-color: #c01818d7;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
-#preloader:before {
+.slider:before {
+    position: absolute;
     content: "";
-    position: fixed;
-    top: calc(50% - 30px);
-    left: calc(50% - 30px);
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
-:root {
-    --effect: hover 1s linear infinite;
+input:checked+.slider {
+    background-color: #0c2e8a;
 }
 
-* {
-    margin: 0;
+input:focus+.slider {
+    box-shadow: 0 0 1px #0c2e8a;
 }
 
-#preloader {
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#menu2 {
+    display: none;
+}
+
+
+/*PEN STYLES*/
+
+.blog-card {
     display: flex;
-    width: 100vw;
-    height: 100vh;
-    background: rgb(255, 255, 255);
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    margin: 1rem auto;
+    box-shadow: 0 3px 7px -1px rgba(0, 0, 0, .1);
+    margin-bottom: 1.6%;
+    background: #fff;
+    line-height: 1.4;
+    font-family: sans-serif;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 0;
 }
 
-.load {
-    text-align: center;
+.blog-card a {
+    color: inherit;
 }
 
-.load p {
+.blog-card a:hover {
+    color: #5ad67d;
+}
+
+.photo {
+    background: url('../img/1.jpg');
+}
+
+.phototwo .photo {
+    background: url('../img/2.jpg')!important;
+}
+
+.blog-card:hover .photo {
+    transform: scale(1.3) rotate(3deg);
+}
+
+.blog-card .meta {
+    position: relative;
+    z-index: 0;
+    height: 200px;
+}
+
+.blog-card .photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.2s;
+}
+
+.blog-card .details,
+.blog-card .details ul {
+    margin: auto;
+    padding: 0;
+    list-style: none;
+}
+
+.blog-card .details {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    margin: auto;
+    transition: left 0.2s;
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.blog-card .details a {
+    text-decoration: dotted underline;
+}
+
+.blog-card .details ul li {
     display: inline-block;
+}
+
+.blog-card .details .author:before {
+    font-family: FontAwesome;
+    margin-right: 10px;
+    content: "\f007";
+}
+
+.blog-card .details .date:before {
+    font-family: FontAwesome;
+    margin-right: 10px;
+    content: "\f133";
+}
+
+.blog-card .details .tags ul:before {
+    font-family: FontAwesome;
+    content: "\f02b";
+    margin-right: 10px;
+}
+
+.blog-card .details .tags li {
+    margin-right: 2px;
+}
+
+.blog-card .details .tags li:first-child {
+    margin-left: -4px;
+}
+
+.blog-card .description {
+    padding: 1rem;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.blog-card .description h1,
+.blog-card .description h2 {
+    font-family: Poppins, sans-serif;
+}
+
+.blog-card .description h1 {
+    line-height: 1;
+    margin: 0;
+    font-size: 1.7rem;
+}
+
+.blog-card .description h2 {
+    font-size: 1rem;
+    font-weight: 300;
     text-transform: uppercase;
-    text-align: center;
-    font-size: 4em;
-    font-family: arial;
-    font-weight: 600;
-    transform: scale(.5);
-    color: #121212;
-    -webkit-text-stroke: 2px gray;
+    color: #a2a2a2;
+    margin-top: 5px;
 }
 
-@media (max-width: 468px) {
-    .load p {
-        font-size: 2.5em;
+.blog-card .description .read-more {
+    text-align: right;
+}
+
+.blog-card .description .read-more a {
+    color: #5ad67d;
+    display: inline-block;
+    position: relative;
+}
+
+.blog-card .description .read-more a:after {
+    content: "\f061";
+    margin-left: -10px;
+    opacity: 0;
+    vertical-align: middle;
+    transition: margin 0.3s, opacity 0.3s;
+}
+
+.blog-card .description .read-more a:hover:after {
+    margin-left: 5px;
+    opacity: 1;
+}
+
+.blog-card p {
+    position: relative;
+    margin: 1rem 0 0;
+}
+
+.blog-card p:first-of-type {
+    margin-top: 1.25rem;
+}
+
+.blog-card p:first-of-type:before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    background: #5ad67d;
+    width: 35px;
+    top: -0.75rem;
+    border-radius: 3px;
+}
+
+.blog-card:hover .details {
+    left: 0%;
+}
+
+@media (min-width: 640px) {
+    .blog-card {
+        flex-direction: row;
+        max-width: 700px;
     }
-}
-
-.load p:nth-child(1) {
-    animation: var(--effect);
-}
-
-.load p:nth-child(2) {
-    animation: var(--effect) .125s;
-}
-
-.load p:nth-child(3) {
-    animation: var(--effect) .25s;
-}
-
-.load p:nth-child(4) {
-    animation: var(--effect) .375s;
-}
-
-.load p:nth-child(5) {
-    animation: var(--effect) .5s;
-}
-
-.load p:nth-child(6) {
-    animation: var(--effect) .675s;
-}
-
-.load p:nth-child(7) {
-    animation: var(--effect) .75s;
-}
-
-@keyframes hover {
-    0% {
-        transform: scale(.5);
-        color: #121212;
-        -webkit-text-stroke: 2px gray;
+    .blog-card .meta {
+        flex-basis: 40%;
+        height: auto;
     }
-    20% {
-        transform: scale(1);
-        color: pink;
-        -webkit-text-stroke: 3px red;
-        filter: drop-shadow(0 0 1px black)drop-shadow(0 0 1px black)drop-shadow(0 0 3px red)drop-shadow(0 0 5px red)hue-rotate(10turn);
+    .blog-card .description {
+        flex-basis: 60%;
     }
-    50% {
-        transform: scale(.5);
-        color: #121212;
-        -webkit-text-stroke: 2px gray;
+    .blog-card .description:before {
+        transform: skewX(-3deg);
+        content: "";
+        background: #fff;
+        width: 30px;
+        position: absolute;
+        left: -10px;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    .blog-card.alt {
+        flex-direction: row-reverse;
+    }
+    .blog-card.alt .description:before {
+        left: inherit;
+        right: -10px;
+        transform: skew(3deg);
+    }
+    .blog-card.alt .details {
+        padding-left: 25px;
     }
 }
