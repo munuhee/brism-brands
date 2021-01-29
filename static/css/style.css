@@ -1717,7 +1717,7 @@ input:checked+.slider:before {
 }
 
 .blog-card a:hover {
-    color: #5ad67d;
+    color: #0c2e8a;
 }
 
 .photo {
@@ -1835,7 +1835,7 @@ input:checked+.slider:before {
 }
 
 .blog-card .description .read-more a {
-    color: #5ad67d;
+    color: #0c2e8a;
     display: inline-block;
     position: relative;
 }
@@ -1866,7 +1866,7 @@ input:checked+.slider:before {
     content: "";
     position: absolute;
     height: 5px;
-    background: #5ad67d;
+    background: #0c2e8a;
     width: 35px;
     top: -0.75rem;
     border-radius: 3px;
