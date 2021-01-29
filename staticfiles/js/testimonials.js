@@ -9,9 +9,9 @@ const testimonials = [{
         "text": "Braams creation  made it easy and fun to choose a corporate logo for my business"
     },
     {
-        "name": "Crystal ,Magicals",
+        "name": "Crystal Magicals",
         "position": "Entreprenuers",
-        "text": "This guys are amazing designers that delivered the task exactly how we needed it, do your selves a favor and use their services, you will not be disappointed by the work delivered. They will go the extra mile to make sure that you are happy. We will surely work again with them!"
+        "text": "This guys are amazing designers that delivered the task exactly how we needed it, do yourselves a favor and use their services, you will not be disappointed by the work delivered. They will go the extra mile to make sure that you are happy. We will surely work again with them!"
     },
     {
         "name": "Charles Mugo",
