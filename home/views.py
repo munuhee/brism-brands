@@ -17,6 +17,10 @@ def contact(request):
     context = {}
     return render(request, 'home/contact.html',context)   
 
+def portfolio(request):
+    context = {}
+    return render(request, 'home/portfolioall.html',context)   
+
 
 
 

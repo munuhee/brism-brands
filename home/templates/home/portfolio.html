@@ -119,22 +119,27 @@
 <div class="section-header container">
     <h2>Braams Fashion Hub</h2>
 </div>
-<form class="text-center">
-    <label class="switch">
-              <input type="checkbox" id="toggle" checked="true" />
-              <div class="slider round"></div>
-          </label>
-</form>
-<div id="menu1">
-    <div class="text-center">
-        <p>Click the above switch to view our portfolio</p>
-    </div>
+
     <div class="container container1 pt-5 mb-5">
         <div class="column">
             <div class="post-card hover">
                 <div class="post-content">
                     <div class="category">Fashion designers and consultants </div>
                     <h2 class="sub_title">We have a lot of experience in fashion trends.</h2>
+                    <div>
+                        <span class="badge badge-secondary pt-1 pb-1 pr-1 pl-1 mr-1"> Office Outfits</span>
+                        <span class="badge badge-secondary pt-1 pb-1 pr-1 pl-1 mr-1"> Events Outfits</span>
+                        <span class="badge badge-secondary pt-1 pb-1 pr-1 pl-1 mr-1"> Wedding Outfits</span>
+                        <span class="badge badge-secondary pt-1 pb-1 pr-1 pl-1 mr-1"> African Outfits</span>
+                        <span class="badge badge-secondary pt-1 pb-1 pr-1 pl-1 mr-1"> Casual Outfits</span>
+                        <span class="badge badge-secondary pt-1 pb-1 pr-1 pl-1 mr-1"> Graduation Outfits</span>
+                        <span class="badge badge-secondary pt-1 pb-1 pr-1 pl-1 mr-1"> Kids Outfits</span>
+                        <span class="badge badge-secondary pt-1 pb-1 pr-1 pl-1 mr-1"> Footwear(Official ladies/gents shoes)</span>
+                        <span class="badge badge-secondary pt-1 pb-1 pr-1 pl-1 mr-1"> Ankara ladies/gents</span>
+                        <span class="badge badge-secondary pt-1 pb-1 pr-1 pl-1 mr-1"> Unisex rubber shoes</span>
+                        <span class="badge badge-secondary pt-1 pb-1 pr-1 pl-1 mr-1"> Sandals/Open shoes</span>
+                        <span class="badge badge-secondary pt-1 pb-1 pr-1 pl-1 mr-1"> Customized bags</span>
+                    </div>
                     <p class="description">Our work is helping start-up brands creating their vision and make it real, as well as providing fresh inputs to established fashion companies. we are womenswear, menswear and accessories designer with many years of top experience
                         in the industry.</p>
                     <div class="post-meta">Feel free to <a href="{% url 'contact' %}">contact us</a> for a quote on the services you need</div>
@@ -143,147 +148,5 @@
         </div>
     </div>
 </div>
-<div class="pt-5"><br></div>
-</div>
-<div id="menu2">
-
-    <section id="portfolio" class="wow">
-        
-
-        <div class="container-fluid">
-            <div class="row no-gutters">
-
-                <div class="col-lg-3 col-md-4">
-                    <div class="portfolio-item wow fadeInUp">
-                        <a href="{% static 'img/portfolio/1.jpg'%}" class="portfolio-popup">
-                            <img src="{% static 'img/portfolio/1.jpg'%}" alt="">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-info">
-                                    <h2 class="wow fadeInUp">Official Suits</h2>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                  <div class="portfolio-item wow fadeInUp">
-                      <a href="{% static 'img/portfolio/ankaraladies.jpg'%}" class="portfolio-popup">
-                          <img src="{% static 'img/portfolio/ankaraladies.jpg'%}" alt="">
-                          <div class="portfolio-overlay">
-                              <div class="portfolio-info">
-                                  <h2 class="wow fadeInUp">Ankara ladies</h2>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-                <div class="col-lg-3 col-md-4">
-                    <div class="portfolio-item wow fadeInUp">
-                        <a href="{% static 'img/portfolio/kidsoutfit.jpg'%}" class="portfolio-popup">
-                            <img src="{% static 'img/portfolio/kidsoutfit.jpg'%}" alt="">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-info">
-                                    <h2 class="wow fadeInUp">Kids Outfits</h2>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4">
-                    <div class="portfolio-item wow fadeInUp">
-                        <a href="{% static 'img/portfolio/2.jpg'%}" class="portfolio-popup">
-                            <img src="{% static 'img/portfolio/2.jpg'%}" alt="">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-info">
-                                    <h2 class="wow fadeInUp">Wedding Outfits</h2>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4">
-                    <div class="portfolio-item wow fadeInUp">
-                        <a href="{% static 'img/portfolio/africanoutfit.jpg'%}" class="portfolio-popup">
-                            <img src="{% static 'img/portfolio/africanoutfit.jpg'%}" alt="">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-info">
-                                    <h2 class="wow fadeInUp">African Outfits</h2>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4">
-                    <div class="portfolio-item wow fadeInUp">
-                        <a href="{% static 'img/portfolio/casualoutfit.jpg'%}" class="portfolio-popup">
-                            <img src="{% static 'img/portfolio/casualoutfit.jpg'%}" alt="">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-info">
-                                    <h2 class="wow fadeInUp">Casual Outfits</h2>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4">
-                    <div class="portfolio-item wow fadeInUp">
-                        <a href="{% static 'img/portfolio/graduation.jpg'%}" class="portfolio-popup">
-                            <img src="{% static 'img/portfolio/graduation.jpg'%}" alt="">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-info">
-                                    <h2 class="wow fadeInUp">Graduation gowns</h2>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4">
-                    <div class="portfolio-item wow fadeInUp">
-                        <a href="{% static 'img/portfolio/customizedbags.png'%}" class="portfolio-popup">
-                            <img src="{% static 'img/portfolio/customizedbags.png'%}" alt="">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-info">
-                                    <h2 class="wow fadeInUp">Customized Bags</h2>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4">
-                    <div class="portfolio-item wow fadeInUp">
-                        <a href="{% static 'img/portfolio/unisexrubber.jpg'%}" class="portfolio-popup">
-                            <img src="{% static 'img/portfolio/unisexrubber.jpg'%}" alt="">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-info">
-                                    <h2 class="wow fadeInUp">Unisex Rubber shoes</h2>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                  <div class="portfolio-item wow fadeInUp">
-                      <a href="{% static 'img/portfolio/snickersladies.jpg'%}" class="portfolio-popup">
-                          <img src="{% static 'img/portfolio/snickersladies.jpg'%}" alt="">
-                          <div class="portfolio-overlay">
-                              <div class="portfolio-info">
-                                  <h2 class="wow fadeInUp">Ladies Snickers</h2>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-            </div>
-
-        </div>
-    </section>
-</div>
-<!-- #portfolio -->
 
 {% endblock content %}
