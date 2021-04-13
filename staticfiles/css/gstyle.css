@@ -30,7 +30,8 @@
 
 /* Template default CSS
 /*----------------------------------------*/
-
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 html,
 body {
 	height: 100%;

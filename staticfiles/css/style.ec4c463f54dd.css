@@ -9,7 +9,8 @@ License: https://bootstrapmade.com/license/
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 body {
     background-color: rgba(214, 210, 210, 0.2);
     color: #444;
@@ -41,7 +42,9 @@ h6 {
     padding: 0;
 }
 
-
+p{
+    font-family: "Montserrat", sans-serif;
+}
 /* Back to top button */
 
 .back-to-top {
@@ -576,10 +579,17 @@ body.mobile-nav-active #mobile-nav-toggle {
     width: 300px;
     height: 370px;
 }
-
+@media (max-width: 330px) {
+    .about-extra img {
+        margin:auto;
+        max-width: 100%;
+        width: 260px;
+        height: 300px;
+    }
+}
 @media (max-width: 430px) {
     .about-extra img {
-        margin-left: -15px;
+        margin:auto;
         max-width: 100%;
         width: 260px;
         height: 340px;
@@ -2088,10 +2098,10 @@ input:checked+.slider:before {
   
   .post-card {
     position: relative;
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-    background: #fff;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.281);
+    background: #ffffff;
     min-width: 270px;
-    height: 470px;
+    height: 350x;
   }
   
   .post-card:hover,
@@ -2120,23 +2130,10 @@ input:checked+.slider:before {
     width: 135%;
     
   }
-  
-  .date {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1;
-    background: #e74c3c;
-    width: 55px;
-    height: 55px;
-    border-radius: 100%;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 12.5px 0;
-  }
+
   
   .post-content {
-    position: absolute;
+    position: relative;
     bottom: 0;
     background: #FFFFFF;
     width: 100%;
@@ -2147,7 +2144,7 @@ input:checked+.slider:before {
     position: absolute;
     top: -34px;
     left: 0;
-    background: #e74c3c;
+    background: #c01818d7;
     padding: 10px 15px;
     color: #FFFFFF;
     font-size: 14px;
@@ -2184,12 +2181,6 @@ input:checked+.slider:before {
     font-weight: 400;
   }
   
-  .description {
-    color: #666666;
-    font-size: 14px;
-    line-height: 1.8em;
-    display: none;
-  }
   
   .up-title {
     margin: 0 0 15px;
@@ -2375,4 +2366,8 @@ input:checked+.slider:before {
 	 -moz-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2), 0 0 0 20px rgba(255, 255, 255, 0.12);
 	 box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2), 0 0 0 20px rgba(255, 255, 255, 0.12);
 }
- 
+ .homephoto{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
