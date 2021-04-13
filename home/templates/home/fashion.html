@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+{% extends 'home/main.html' %}{% load static %} {% block title %}Portfolio{% endblock %}{% block content %}
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Eflyer</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="{% static 'css/fashionstyle.css'%}">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="{% static 'css/responsive.css'%}">
+      <!-- fevicon -->
+      <link rel="icon" href="" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css'%}">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+      <!-- font awesome -->
+      <link rel="stylesheet" type="text/css" href="{% static https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!--  -->
+      <!-- owl stylesheets -->
+      <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+      <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css''%}">
+      <link rel="stylesoeet" href="{% static 'css/owl.theme.default.min.css'%}">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   </head>
+   <body>
+      <!-- fashion section start -->
+      <div class="fashion_section">
+         <div id="main_slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container pt-4">
+                     <h3 class="fashion_taital">Men & Women Fashion</h3>
+                     <div class="fashion_section_2">
+                        <div class="row">
+                            {% for fashion in fashions %}
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">{{fashion.title}}</h4>
+                                 <div class="tshirt_img"><img src="{{ fashion.cover_image.url }}"></div>
+                                 <div><p>{{fashion.overview}}...</p></div>
+                                 <div class="btn_main">
+                                    <div class="buy_bt tet-warning"><a href="{% url 'fashion-detail' fashion.slug %}">see more now</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                           {% endfor %}
+                           <div class="paginator text-center">
+                            {% if is_paginated %}
+                            <ul class="pagination pt-4">
+                                {% if page_obj.has_previous %}
+                                <li><a class="btn accent-1 btn-outline-warning" href="?page={{ page_obj.previous_page_number }} ">&laquo;</a></li>
+                                {% else %}
+                                <li class="disabled "><span class="btn btn-outline-warning">&laquo;</span></li>
+                                {% endif %} {% for i in paginator.page_range %} {% if page_obj.number == i %}
+                                <li class="active "><span class="btn btn-warning">{{ i }} <span class="sr-only ">(current)</span></span>
+                                </li>
+                                {% else %}
+                                <li><a href="?page={{ i }} " class="btn btn-outline-warning">{{ i }}</a></li>
+                                {% endif %} {% endfor %} {% if page_obj.has_next %}
+                                <li><a href="?page={{ page_obj.next_page_number }} " class="btn btn-outline-warning">&raquo;</a></li>
+                                {% else %}
+                                <li class="disabled "><span class="btn btn-outline-warning">&raquo;</span></li>
+                                {% endif %}
+                            </ul>
+                            {% endif %}
+                            </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+         </div>
+      </div>
+      <!-- jewellery  section end -->
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="fashion-logo"><a href="index.html"><img src="{% static 'img/logo.svg' %}"></a></div>
+            <div class="input_bt">
+               <input type="text" class="mail_bt" placeholder="Your Email" name="Your Email">
+               <span class="subscribe_bt" id="basic-addon2"><a href="#">Subscribe</a></span>
+            </div>
+            <div class="footer_menu">
+               <ul>
+                  <li><a href="#">Today's Deals</a></li>
+                  <li><a href="#">Customer Service</a></li>
+               </ul>
+            </div>
+            <div class="location_main"> Contact : <a href="#">+254 712 696905, +254 719 505451, +254 736 176644, +254 717 029038, +254 762 223960</a></div>
+         </div>
+      </div>
+      <!-- footer section end -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+   </body>
+</html>
+{% endblock content %}

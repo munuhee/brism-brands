@@ -9,15 +9,10 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-    <!-- Favicons -->
-    <!--<link href="{% static 'img/favicon.png'%}" rel="icon"> -->
-    <link href="{% static 'img/apple-touch-icon.png'%}" rel="apple-touch-icon">
-
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
 
     <!-- Bootstrap CSS File -->
-    <link href="{% static 'lib/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Libraries CSS Files -->
@@ -29,29 +24,12 @@
     <link href="{% static 'lib/ionicons/css/ionicons.min.css'%}" rel="stylesheet">
 
     <!-- Main Stylesheet File -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fashionstyle.css'%}">
     <link href="{% static 'css/style.css'%}" rel="stylesheet">
 </head>
 
 <body id="body">
-
-    <!--==========================
-    Top Bar
-  ============================-->
-    <section id="topbar" class="d-none d-lg-block">
-        <div class="container clearfix">
-            <div class="contact-info float-left">
-                <i class="fa fa-envelope-o"></i> <a href="mailto:braamscreation@gmail.com">braamscreation@gmail.com</a>
-                <i class="fa fa-phone"></i> +254 712 696905
-            </div>
-            <div class="social-links float-right">
-                <a href="https://api.whatsapp.com/send?phone=254712696905&text=Hello."></i>
-                </a>
-                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-            </div>
-        </div>
-    </section>
-
+    
     <!--==========================
     Header
   ============================-->
@@ -59,18 +37,17 @@
         <div class="container">
 
             <div id="logo" class="pull-left">
-                <h1><a href="{% url 'home' %}" class="scrollto">Bra<span>ams</span> Crea<span>tions</span></a></h1>
+                <h4><a href="{% url 'home' %}" class="scrollto"><img class="main-logo" src="{% static 'img/braamscreation2.png' %}"/> BRAAMS CREATIONS</a></h4>
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
             </div>
 
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
-                    <li class="menu-active"><a href="{% url 'home' %}">Home</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <!--<li class="menu-active"><a href="">Home</a></li> -->
+                    <li><a href="{% url 'home' %}">Home</a></li>
                     <li><a href="{% url 'fashionhub' %}">Braams Fashion Hub</a></li>
                     <li><a href="{% url 'graphics' %}">Braams Graphics</a></li>
-                    <li><a href="{% url 'portfolio' %}">Our Portfolio</a></li>
                     <li><a href="{% url 'contact' %}">Contact</a></li>
                 </ul>
             </nav>
@@ -78,7 +55,6 @@
         </div>
     </header>
     <!-- #header -->
-
     <!--==========================
     Intro Section
   ============================-->
@@ -93,14 +69,6 @@
             </div>
         </div>
 
-        <div id="intro-carousel" class="owl-carousel">
-            <div class="item" style="background-image: url('/img/intro-carousel/1.jpg');"></div>
-            <div class="item" style="background-image: url('/img/intro-carousel/2.jpg');"></div>
-            <div class="item" style="background-image: url('/img/intro-carousel/3.jpg');"></div>
-            <div class="item" style="background-image: url('/img/intro-carousel/4.jpg');"></div>
-            <div class="item" style="background-image: url('/img/intro-carousel/5.jpg');"></div>
-        </div>
-
     </section>
     <!-- #intro -->
 
@@ -113,7 +81,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 about-img text-center">
-                        <img src="{% static 'img/about-img.jpg' %}" alt="">
+                        <img src="{% static 'img/homep2.png' %}" alt="">
                     </div>
 
                     <div class="col-lg-6 content">
@@ -149,121 +117,111 @@
     ============================-->
         <section id="services">
             <div class="container">
-                <div class="section-header">
-                    <h2>Services</h2>
-                    <p>With many years of experience in the industry, we can lead you through the process step by step and offer creative support along the way by giving you design options that will work best with your budget. Our services goes to all through
-                        our market team approach, where we become patners in our client's business development through intelligently listening and single point of entry.
-                    </p>
+                <div class="title text-center">
+                    <h3>Our Braches</h3>
+                    <p>Bramms creation is divided into two sections</p>
                 </div>
-
-                <div class="blog-card phototwo">
-                    <div class="meta">
-                        <div class="photo"></div>
-                        <ul class="details">
-                            <li class="tags">
-                                <ul>
-                                    <li><a>Branding</a></li>
-                                    <li><a>Large Format Printing</a></li>
-                                    <li><a>Books Publication</a></li>
-                                    <li><a>Posters</a></li>
-                                    <li><a>Fliers</a></li>
-                                    <li><a>Gift bags</a></li>
-                                    <li><a>Etc..</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="description">
-                        <h1>Graphic design</h1>
-                        <h2>We always deliver services better than expected</h2>
-                        <p> Do you need high-quality vector designs for your t-shirts, logos, stickers, album art and more? We are here to help!<br><small><strong>Branding,Large Format Printing, Books Publishing, Posters designing, Fliers designing, Gift bags, Adobe Photoshop & Adobe Lightroom,
-                            Logo design, Cover design, Poster design, Adobe Illustrator</strong></small></p>
-                        <p class="read-more">
-                            <a href="{% url 'graphics' %}">Read More</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="blog-card photoone alt">
-                    <div class="meta">
-                        <div class="photo"></div>
-                        <ul class="details">
-                            <ul>
-                                <li><a>Official suits</a></li>
-                                <li><a>Events Outfit</a></li>
-                                <li><a>African Outfits</a></li>
-                                <li><a>Wedding Outfits</a></li>
-                                <li><a>Casual Outfits</a></li>
-                                <li><a>Graduation gowns</a></li>
-                                <li><a>Kids Outfits</a></li>
-                                <li><a>Footwear</a></li>
-                                <li><a>Ankara ladies/gents shoes</a></li>
-                                <li><a>Snickers ladies/gents shoes</a></li>
-                                <li><a>Unisex rubber shoes</a></li>
-                                <li><a>Sandals/Open shoes</a></li>
-                                <li><a>Customized bags</a></li>
-                                <li><a>Etc..</a></li>
-                            </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="description">
-                        <h1>Fashion design</h1>
-                        <h2>Opening a door to the future </h2>
-                        <p>Skills include designing collections from the bottom up and an understanding of process from start to finish.<br><br><br><br></p>
-                        <p class="read-more">
-                            <a href="{% url 'fashionhub' %}">Read More</a>
-                        </p>
-                    </div>
-                </div>
-                <!--
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="box wow">
-                            <div class="icon"><i class="fa fa-shopping-bag"></i></div>
-                            <h4 class="title"><a href="">Fashion design</a></h4>
-                            <p class="description">Skills include designing collections from the bottom up and an understanding of process from start to finish.<br><br><br><br></p>
+                <div class="row text-center">
+                    <div class="col-md-6">
+                    <div class="up-title">Braams Fashion Hub</div>
+                    <div class="post-card">
+                        <div class="post-img  text-center">
+                            <img src="{% static 'img/Banner.png' %}" />
+                        </div>
+                        <div class="post-content">
+                            <a href="{% url 'fashionhub' %}"><div class="category">Explore</div></a>
+                                <h1 class="title">Fashion Hub</h1>
+                                <h2 class="sub_title">Be Trendy for Every Mood.</h2>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-6">
-                        <div class="box wow">
-                            <div class="icon"><i class="fa fa-picture-o"></i></div>
-                            <h4 class="title"><a href="">Graphic Design</a></h4>
-                            <p class="description">Do you need high-quality vector designs for your t-shirts, logos, stickers, album art and more? We are here to help!<br><small><strong>Adobe Photoshop & Adobe Lightroom,
-                                Logo design, Cover design, Poster design, Adobe Illustrator</strong></small></p>
+                
+                    <div class="col-md-6">
+                    <div class="up-title">Braams Graphics</div>
+                        <div class="post-card">
+                        <div class="post-img  text-center">
+                            <img src="{% static 'img/Banner2.png' %}" />
+                        </div>
+                        <div class="post-content">
+                            <a href="{% url 'graphics' %}"><div class="category">Explore</div></a>
+                                <h1 class="title"> Graphics </h1>
+                                <h2 class="sub_title">Be a brand above.</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
--->
-            </div>
+              </div>
         </section>
-        <!-- #services -->
-
+    <br><br>
 
         <!--==========================
       Mission Section
     ============================-->
-        <section id="services">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Our Mission, Vision and values</h2>
-                    <p><strong>Mission :</strong>To provide expectional services and follow our promises to the later. We strive to deliver individualism solutions to our client's needs and add value to their businesses.With many years of experience in the
-                        industry, we can lead you through the process step by step and offer creative support along the way by giving you design options that will work best with your budget.
-                        <p><strong>Vision :</strong> At Braams Creations we endevour to become the benchmark of the outstanding quality services in all industries.
-                        </p>
-                        <p><strong>Values :</strong> As a business we are commited to our principles, products, team, patners and clients.
-                        </p>
+    <section id="about pt-5">
+        <div class="container">
+            <div class="row about-extra p-4">
+                <div class="col-lg-6 wow fadeInUp text-center">
+                    <img src="{% static 'img/braams2.png' %}" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
+                    <h4>Our Mission.</h4>
+                    <p>
+                        To provide expectional services and follow our promises to the later. We strive to deliver individualism solutions to our client's needs and add value to their businesses.With many years of experience in the industry, we can lead you through the process step by step and offer creative support along the way by giving you design options that will work best with your budget.
+                    </p>
+                    <p>
+                        To become the preferred company-applying insigt, service quality and innovation to create sustainable growth for business and society.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row about-extra p-4">
+                <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
+                    <img src="{% static 'img/braams3.png' %}" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
+                    <h4>Our Vission.</h4>
+                    <p>
+                        At Braams Creations we endevour to become the benchmark of the outstanding quality services in all industries.
+                    </p>
+                    <p>
+                        To be the region's best at creating designs for the brands that we represent, and strategically act in the best interest of our customers without fear of compromising the core values that make us who we are.
+                    </p>
                 </div>
 
             </div>
-        </section>
+
+
+            <div class="row about-extra p-4">
+                <div class="col-lg-6 wow fadeInUp">
+                    <img src="{% static 'img/braams1.png' %}" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
+                    <h4>Our Values.</h4>
+                    <p style="font-family: "Montserrat", sans-serif;">
+                        <span class="badge badge-info pt-1 pb-1 pr-1 pl-1 mr-1">  Integrity</span>
+                        <span class="badge badge-success pt-1 pb-1 pr-1 pl-1 mr-1">  Responsibility</span>
+                        <span class="badge badge-secondary pt-1 pb-1 pr-1 pl-1 mr-1">  Care</span>
+                        <span class="badge badge-warning pt-1 pb-1 pr-1 pl-1 mr-1">  Openness</span><br>
+                        As a business we are commited to our principles, products, team, patners and clients.
+                    </p>
+                    <p>
+                        Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
         <!-- #mission -->
+
+
         <!--==========================
       Testimonials Section
-    ============================-->
-        <section class="container wow">
-            <div class="section-header">
-                <h2>Testimonials</h2>
+ ============================-->
+        <section class="container wow pt-5">
+            <div class="title text-center">
+                <h3>TESTIMONIALS</h3>
             </div>
             <div class="testimonials-container">
                 <div class="progress-bar"></div>
@@ -278,46 +236,11 @@
                 </div>
             </div>
         </section>
-        <!-- #testimonials -->
-
-        <!--==========================
-      Our Team Section
-    ============================-->
-        <section id="team" class="wow">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Team</h2>
-                </div>
-                <div class="row text-center">
-                    <div class="col-lg-3 col-md-3">
-                        <div class="member">
-                            <div class="pic"><img src="{% static 'img/team-1.jpg'%}" alt=""></div>
-                            <div class="details">
-                                <h4>Brian Simba</h4>
-                                <span>Chief Designer</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-3">
-                        <div class="member">
-                            <div class="pic"><img src="{% static 'img/team-2.jpg'%}" alt=""></div>
-                            <div class="details">
-                                <h4>Agnes Wamaitha</h4>
-                                <span>Fashion & Graphics Designer</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!-- #team -->
     </main>
 
     <!--==========================
                                 Footer
-                            ==============-->
+    ==============-->
     <footer id="footer">
         <div class="footer-top">
             <div class="container">
@@ -378,11 +301,9 @@
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
     <!-- Preloader -->
-    <div class="spinner-wrapper">
-        <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
+    <div class="wrapper">
+        <div class="logo-svg">
+            <div id="preloader"></div>
         </div>
     </div>
     <!-- end of preloader -->

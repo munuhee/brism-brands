@@ -11,14 +11,12 @@
 
     <!-- Favicons -->
     <!--<link href="{% static 'img/favicon.png'%}" rel="icon"> -->
-    <link href="{% static 'img/apple-touch-icon.png'%}" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
 
     <!-- Bootstrap CSS File -->
-    <link href="{% static 'lib/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
-    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Libraries CSS Files -->
     <link href="{% static 'lib/font-awesome/css/font-awesome.min.css'%}" rel="stylesheet">
@@ -29,68 +27,51 @@
     <link href="{% static 'lib/ionicons/css/ionicons.min.css'%}" rel="stylesheet">
 
     <!-- Main Stylesheet File -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fashionstyle.css'%}">
     <link href="{% static 'css/style.css'%}" rel="stylesheet">
 </head>
+<!--==========================
+Header
+============================-->
+<header id="header">
+    <div class="container">
 
-<body id="body">
-
-    <!--==========================
-    Top Bar
-  ============================-->
-    <section id="topbar" class="d-none d-lg-block">
-        <div class="container clearfix">
-            <div class="contact-info float-left">
-                <i class="fa fa-envelope-o"></i> <a href="mailto:braamscreation@gmail.com">braamscreation@gmail.com</a>
-                <i class="fa fa-phone"></i> +254 712 696905
-            </div>
-            <div class="social-links float-right">
-                <a href="https://api.whatsapp.com/send?phone=254712696905&text=Hello."></i>
-                </a>
-                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-            </div>
+        <div id="logo" class="pull-left">
+            <h4><a href="{% url 'home' %}" class="scrollto"><img class="main-logo" src="{% static 'img/braamscreation2.png' %}"/> BRAAMS CREATIONS</a></h4>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
         </div>
-    </section>
 
-    <!--==========================
-    Header
-  ============================-->
-    <header id="header">
-        <div class="container">
-
-            <div id="logo" class="pull-left">
-                <h1><a href="{% url 'home' %}" class="scrollto">Bra<span>ams</span> Crea<span>tions</span></a></h1>
-                <!-- Uncomment below if you prefer to use an image logo -->
-                <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
-            </div>
-
-            <nav id="nav-menu-container">
-                <ul class="nav-menu">
-                    <li class="menu-active"><a href="{% url 'home' %}">Home</a></li>
-                    <li><a href="{% url 'fashionhub' %}">Braams Fashion Hub</a></li>
-                    <li><a href="{% url 'graphics' %}">Braams Graphics</a></li>
-                    <li><a href="{% url 'portfolio' %}">Our Portfolio</a></li>
-                    <li><a href="{% url 'contact' %}">Contact</a></li>
-                </ul>
-            </nav>
-            <!-- #nav-menu-container -->
-        </div>
-    </header>
-    <!-- #header -->
+        <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <!--<li class="menu-active"><a href="">Home</a></li> -->
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'fashionhub' %}">Braams Fashion Hub</a></li>
+                <li><a href="{% url 'graphics' %}">Braams Graphics</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- #nav-menu-container -->
+    </div>
+</header>
+<!-- #header -->
     {% block content %} {% endblock content %}
 
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
     <!-- Preloader -->
-    <div class="spinner-wrapper">
-        <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
+    <div class="wrapper">
+        <div class="logo-svg">
+            <img class="" src="{% static 'img/logo.svg' %}" />
+            <div class="sp sp-volume"></div>
         </div>
     </div>
     <!-- end of preloader 
     <!-- JavaScript Libraries -->
+    <script src="{% static 'js/carousel.js'%}"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="{% static 'lib/jquery/jquery.min.js'%}"></script>
     <script src="{% static 'lib/jquery/jquery-migrate.min.js'%}"></script>
     <script src="{% static 'lib/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
@@ -107,9 +88,8 @@
 
     <!-- Template Main Javascript File -->
     <script src="{% static 'js/main.js'%}"></script>
-    <script src="{% static 'js/graphics.js'%}"></script>
     <script src="{% static 'js/testimonials.js'%}"></script>
-
+    
 </body>
 
 </html>

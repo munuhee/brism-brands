@@ -1,208 +1,81 @@
 {% extends 'home/main.html' %} {% load static %} {% block title %}Portfolio{% endblock %}{% block content %}
-<section id="services" class="pb-5">
-    <div class="container">
-        <div class="section-header">
-            <h2>Braams Graphics</h2>
-        </div>
-        <style>
-            /*form styles*/
-            
-            #msform {
-                width: 100%;
-                margin: auto;
-                text-align: center;
-                position: relative;
-            }
-            
-            #msform fieldset {
-                border: 0 none;
-                border-radius: 3px;
-                padding: 10px;
-                box-sizing: border-box;
-                width: 100%;
-                margin: auto;
-                /*stacking fieldsets above each other*/
-                position: relative;
-            }
-            /*Hide all except first fieldset*/
-            
-            #msform fieldset:not(:first-of-type) {
-                display: none;
-            }
-            /*inputs*/
-            
-            #msform input,
-            #msform textarea {
-                padding: 15px;
-                border: 1px solid #ccc;
-                border-radius: 3px;
-                margin-bottom: 10px;
-                width: 100%;
-                box-sizing: border-box;
-                font-family: montserrat;
-                color: #2C3E50;
-                font-size: 13px;
-            }
-            /*buttons*/
-            
-            #msform .action-button {
-                width: 100px;
-                background: #0c2e8a;
-                font-weight: bold;
-                color: white;
-                border: 0 none;
-                border-radius: 1px;
-                cursor: pointer;
-                padding: 10px 5px;
-                margin: 10px 5px;
-            }
-            
-            #msform .action-button:hover,
-            #msform .action-button:focus {
-                box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
-            }
-            /*headings*/
-            
-            .fs-title {
-                font-size: 15px;
-                text-transform: uppercase;
-                color: #2C3E50;
-                margin-bottom: 10px;
-            }
-            
-            .fs-subtitle {
-                font-weight: normal;
-                font-size: 13px;
-                color: #666;
-                margin-bottom: 20px;
-            }
-            /*progressbar*/
-            
-            #progressbar {
-                margin-bottom: 30px;
-                overflow: hidden;
-                /*CSS counters to number the steps*/
-                counter-reset: step;
-            }
-            
-            #progressbar li {
-                list-style-type: none;
-                color: white;
-                text-transform: uppercase;
-                font-size: 9px;
-                width: 33.33%;
-                float: left;
-                position: relative;
-            }
-            
-            #progressbar li:before {
-                content: counter(step);
-                counter-increment: step;
-                width: 20px;
-                line-height: 20px;
-                display: block;
-                font-size: 10px;
-                color: #333;
-                background: white;
-                border-radius: 3px;
-                margin: 0 auto 5px auto;
-            }
-            /*progressbar connectors*/
-            
-            #progressbar li:after {
-                content: '';
-                width: 100%;
-                height: 2px;
-                background: white;
-                position: absolute;
-                left: -50%;
-                top: 9px;
-                z-index: -1;
-                /*put it behind the numbers*/
-            }
-            
-            #progressbar li:first-child:after {
-                /*connector not needed before the first step*/
-                content: none;
-            }
-            /*marking active/completed steps green*/
-            /*The number of the step and the connector before it = green*/
-            
-            #progressbar li.active:before,
-            #progressbar li.active:after {
-                background: #27AE60;
-                color: white;
-            }
-        </style>
+<!DOCTYPE html>
+<html lang="zxx">
 
-        <!-- multistep form -->
-        <div id="msform">
-            <!-- fieldsets -->
-            <fieldset>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="box wow">
-                            <div class="icon"><i class="fa fa-clipboard"></i></div>
-                            <h4 class="title"><a href="">Stationeries</a></h4>
-                            <p class="description"><i class="fa fa-check"></i>Letter heads <i class="fa fa-check"></i>evelopes <i class="fa fa-check"></i>Pens <i class="fa fa-check"></i> Business cards <i class="fa fa-check"></i> Bronchures <i class="fa fa-check"></i> Receipt/invoices
-                                <i class="fa fa-check"></i> books.<br><br><br><br></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="box wow">
-                            <div class="icon"><i class="fa fa-picture-o"></i></div>
-                            <h4 class="title"><a href="">Pos Materials</a></h4>
-                            <p class="description"><i class="fa fa-check"></i>Posters <i class="fa fa-check"></i> Gift boxes <i class="fa fa-check"></i> Flags <i class="fa fa-check"></i> Fliers <i class="fa fa-check"></i> Gift bags <i class="fa fa-check"></i> Newsletters
-                                <i class="fa fa-check"></i> Customized invites <i class="fa fa-check"></i> Drinks/Food vouchers <i class="fa fa-check"></i> Calendars <i class="fa fa-check"></i> Diaries <i class="fa fa-check"></i> Letter heads
-                                <i class="fa fa-check"></i> Menu <i class="fa fa-check"></i> Company profile <i class="fa fa-check"></i> Publications .<br><br></p>
-                        </div>
-                    </div>
-                </div>
-                <input type="button" name="next" class="next action-button" value="Next" />
-            </fieldset>
-            <fieldset>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="box wow">
-                            <div class="icon"><i class="fa fa-shopping-bag"></i></div>
-                            <h4 class="title"><a href="">Graphic designing</a></h4>
-                            <p class="description"><i class="fa fa-check"></i> Logos <i class="fa fa-check"></i> Banners <i class="fa fa-check"></i> Fliers <i class="fa fa-check"></i> Receipt books <i class="fa fa-check"></i> Stickers <i class="fa fa-check"></i> Posters
-                                <i class="fa fa-check"></i> Wedding cards <i class="fa fa-check"></i> Complimentary Receipt deliveries <i class="fa fa-check"></i> Magazines <i class="fa fa-check"></i> Book covers</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="box wow">
-                            <div class="icon"><i class="fa fa-calendar"></i></div>
-                            <h4 class="title"><a href="">Branding Items</a></h4>
-                            <p class="description"><strong>eg, </strong><i class="fa fa-check"></i> T-shirts/Cap/Co-operate shirts <i class="fa fa-check"></i> Pens <i class="fa fa-check"></i> Flashdisks <i class="fa fa-check"></i> Keyholdders <i class="fa fa-check"></i> Water
-                                bottles <i class="fa fa-check"></i> Wall clock <i class="fa fa-check"></i> Crystals/rocks. <strong>We also brand</strong> Vehicles and Offices</p>
-                        </div>
-                    </div>
-                </div>
-                <input type="button" name="previous" class="previous action-button" value="Previous" />
-                <input type="button" name="next" class="next action-button" value="Next" />
-            </fieldset>
-            <fieldset>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="box wow">
-                            <div class="icon"><i class="fa fa-picture-o"></i></div>
-                            <h4 class="title"><a href=""> Lage Format Printing</a></h4>
-                            <p class="description"><i class="fa fa-check"></i> Roll-up banners <i class="fa fa-check"></i> Tear drop banners <i class="fa fa-check"></i> Light boxes <i class="fa fa-check"></i> Perspect boards <i class="fa fa-check"></i> Industrial Sign boards
-                                <i class="fa fa-check"></i> Backlit boxes<br><br><br></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="box wow">
-                            <div class="icon"><i class="fa fa-book"></i></div>
-                            <h4 class="title"><a href="">Books Publication</a></h4>
-                            <p class="description"><i class="fa fa-check"></i> Text books <i class="fa fa-check"></i> Magazines <i class="fa fa-check"></i> Exercise books <i class="fa fa-check"></i> New Curriculum Books<br><br><br><br></p>
-                        </div>
-                    </div>
-                </div>
-                <input type="button" name="previous" class="previous action-button" value="Previous" />
-            </fieldset>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Directing Template">
+    <meta name="keywords" content="Directing, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Braams Graphics</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'css/gstyle.css' %}" type="text/css">
+</head>
+
+<body>
+    <!--laptop view-->
+    <section class="most-search spad laptop text-center">
+        <div class="container">
+        <div class="section-title">
+            <h2>The Most Searched Services</h2>
+            <p>Keeping your design, branding and overall marketing up to speed with what our clients/customers expect to see</p>
         </div>
-    </div>
-</section>
+        </div>
+            <div class="container text-center laptop">
+                <div class="row">
+                    {% for graphic in graphics %}
+                    <div class="col-md-4 pb-4">
+                        <img src="{{ graphic.cover_image.url }}" alt="">
+                        <div class="body-content">
+                            <h3>{{graphic.title}}</h3>
+                            <p>{{graphic.overview}}...</p>
+                            <a href="{% url 'graphic-detail' graphic.slug %}" class="round-btn"><i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    {% endfor %}
+     
+                    <div class="paginator text-center">
+                        {% if is_paginated %}
+                        <ul class="pagination pt-4">
+                            {% if page_obj.has_previous %}
+                            <li><a class="btn accent-1 btn-outline-warning" href="?page={{ page_obj.previous_page_number }} ">&laquo;</a></li>
+                            {% else %}
+                            <li class="disabled "><span class="btn btn-outline-warning">&laquo;</span></li>
+                            {% endif %} {% for i in paginator.page_range %} {% if page_obj.number == i %}
+                            <li class="active "><span class="btn btn-warning">{{ i }} <span class="sr-only ">(current)</span></span>
+                            </li>
+                            {% else %}
+                            <li><a href="?page={{ i }} " class="btn btn-outline-warning">{{ i }}</a></li>
+                            {% endif %} {% endfor %} {% if page_obj.has_next %}
+                            <li><a href="?page={{ page_obj.next_page_number }} " class="btn btn-outline-warning">&raquo;</a></li>
+                            {% else %}
+                            <li class="disabled "><span class="btn btn-outline-warning">&raquo;</span></li>
+                            {% endif %}
+                        </ul>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Most Search Section End -->
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            
+
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="{% static 'js/gmain.js' %}"></script>
+</body>
+
+</html>
 {% endblock content %}
